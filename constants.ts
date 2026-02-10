@@ -13,6 +13,7 @@ export const MENU_DATA: MenuData = {
   "menu": [
     {
       "categoria": "Sopas",
+      "imagen": "https://images.unsplash.com/photo-1547592166-23acbe3a624b?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Sopa Wantan",
@@ -43,29 +44,30 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Tallarines",
+      "imagen": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "Tallarín SaltadoconPollo",
+          "nombre": "Tallarín Saltado con Pollo",
           "descripcion": "Tallarines salteados al wok con trozos de pollo tierno y verduras frescas en salsa de la casa.",
           "precio": 18.00
         },
         {
-          "nombre": "Tallarín SaltadoconChancho",
+          "nombre": "Tallarín Saltado con Chancho",
           "descripcion": "Tallarines con láminas de chancho asado y verduras crocantes, salteados para un sabor ahumado único.",
           "precio": 20.00
         },
         {
-          "nombre": "Tallarín SaltadoconPato",
+          "nombre": "Tallarín Saltado con Pato",
           "descripcion": "Delicioso pato asado salteado con tallarines y verduras en su punto.",
           "precio": 22.00
         },
         {
-          "nombre": "Tallarín SaltadoconCarne",
+          "nombre": "Tallarín Saltado con Carne",
           "descripcion": "Trozos de carne de res salteados al fuego alto con tallarines y verduras.",
           "precio": 20.00
         },
         {
-          "nombre": "Tallarín SaltadoconLangostino",
+          "nombre": "Tallarín Saltado con Langostino",
           "descripcion": "Langostinos frescos salteados con tallarines y verduras, un clásico marinero.",
           "precio": 25.00
         },
@@ -88,6 +90,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Arroces (Chaufas y Aeropuertos)",
+      "imagen": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Chaufa de Pollo",
@@ -145,17 +148,17 @@ export const MENU_DATA: MenuData = {
           "precio": 30.00
         },
         {
-          "nombre": "AeropuertoconPollo",
+          "nombre": "Aeropuerto con Pollo",
           "descripcion": "Mezcla perfecta de arroz chaufa, tallarines fritos, verduras y pollo, todo salteado al wok.",
           "precio": 18.00
         },
         {
-          "nombre": "AeropuertoconChancho",
+          "nombre": "Aeropuerto con Chancho",
           "descripcion": "Combinación de arroz chaufa y tallarines crocantes con nuestro chancho asado.",
           "precio": 20.00
         },
         {
-          "nombre": "AeropuertoconCarne",
+          "nombre": "Aeropuerto con Carne",
           "descripcion": "Arroz chaufa y tallarines salteados con trozos de carne y verduras.",
           "precio": 20.00
         },
@@ -173,24 +176,25 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Combinados",
+      "imagen": "https://images.unsplash.com/photo-1541696432-82c6da8ce6d2?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "CombinadoconPollo",
+          "nombre": "Combinado con Pollo",
           "descripcion": "Dúo perfecto: Arroz chaufa y tallarín (frito o sancochado) con pollo y verduras.",
           "precio": 20.00
         },
         {
-          "nombre": "CombinadoconChancho",
+          "nombre": "Combinado con Chancho",
           "descripcion": "Arroz chaufa con tallarín y nuestro chancho asado especial.",
           "precio": 23.00
         },
         {
-          "nombre": "CombinadoconCarne",
+          "nombre": "Combinado con Carne",
           "descripcion": "Mezcla de chaufa y tallarín con carne de res y verduras.",
           "precio": 25.00
         },
         {
-          "nombre": "CombinadoconPato",
+          "nombre": "Combinado con Pato",
           "descripcion": "Combinado servido con generosas porciones de pato asado y verduras.",
           "precio": 25.00
         },
@@ -203,14 +207,15 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Platos Dulces",
+      "imagen": "https://images.unsplash.com/photo-1525203106342-526347d45cb5?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "PolloconDurazno",
+          "nombre": "Pollo con Durazno",
           "descripcion": "Pollo crocante bañado en salsa de durazno dulce con verduras seleccionadas.",
           "precio": 22.00
         },
         {
-          "nombre": "PolloconPiña",
+          "nombre": "Pollo con Piña",
           "descripcion": "Clásico agridulce: pollo con trozos de piña en salsa especial.",
           "precio": 21.00
         },
@@ -220,7 +225,7 @@ export const MENU_DATA: MenuData = {
           "precio": 21.00
         },
         {
-          "nombre": "PolloconTamarindo",
+          "nombre": "Pollo con Tamarindo",
           "descripcion": "Pollo y verduras bañados en nuestra clásica salsa de tamarindo agridulce.",
           "precio": 21.00
         },
@@ -230,12 +235,12 @@ export const MENU_DATA: MenuData = {
           "precio": 25.00
         },
         {
-          "nombre": "Pollo EnrolladoconTamarindo",
+          "nombre": "Pollo Enrollado con Tamarindo",
           "descripcion": "Pollo enrollado especial servido con verduras y salsa de tamarindo.",
           "precio": 25.00
         },
         {
-          "nombre": "PolloconPiña y Durazno",
+          "nombre": "Pollo con Piña y Durazno",
           "descripcion": "Dulce combinación de pollo con piña y durazno, una delicia frutal.",
           "precio": 23.00
         },
@@ -248,14 +253,15 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Platos Salados",
+      "imagen": "https://images.unsplash.com/photo-1623341214183-167825227d82?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "PolloconVerduras",
+          "nombre": "Pollo con Verduras",
           "descripcion": "Saludable y delicioso: pollo salteado con verduras frescas variadas.",
           "precio": 18.00
         },
         {
-          "nombre": "PolloconChampiñones",
+          "nombre": "Pollo con Champiñones",
           "descripcion": "Pollo tierno salteado con champiñones frescos y verduras.",
           "precio": 22.00
         },
@@ -265,7 +271,7 @@ export const MENU_DATA: MenuData = {
           "precio": 20.00
         },
         {
-          "nombre": "PolloconTausi",
+          "nombre": "Pollo con Tausi",
           "descripcion": "Pollo salteado con salsa de tausi (frijol negro fermentado) para un sabor intenso.",
           "precio": 19.00
         },
@@ -278,24 +284,25 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Chancho Asado",
+      "imagen": "https://images.unsplash.com/photo-1624726175512-19c974541b6d?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "ChanchoconTamarindo",
+          "nombre": "Chancho con Tamarindo",
           "descripcion": "Chancho asado bañado en salsa agridulce de tamarindo con verduras.",
           "precio": 22.00
         },
         {
-          "nombre": "ChanchoconVerduras",
+          "nombre": "Chancho con Verduras",
           "descripcion": "Chancho asado salteado con mix de verduras frescas.",
           "precio": 19.00
         },
         {
-          "nombre": "ChanchoconNabo",
+          "nombre": "Chancho con Nabo",
           "descripcion": "Tradicional combinación de chancho asado con nabo encurtido y verduras.",
           "precio": 20.00
         },
         {
-          "nombre": "ChanchoconTausí",
+          "nombre": "Chancho con Tausí",
           "descripcion": "Chancho asado salteado en salsa de tausi, sabor oriental clásico.",
           "precio": 20.00
         },
@@ -308,24 +315,25 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Pato Asado",
+      "imagen": "https://images.unsplash.com/photo-1516448332152-78d122e20ff3?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "PatoconVerduras",
+          "nombre": "Pato con Verduras",
           "descripcion": "Pato asado jugoso salteado con verduras frescas.",
           "precio": 22.00
         },
         {
-          "nombre": "PatoconChampiñones",
+          "nombre": "Pato con Champiñones",
           "descripcion": "Lujosa combinación de pato asado y champiñones.",
           "precio": 25.00
         },
         {
-          "nombre": "PatoconOrejas Chinas",
+          "nombre": "Pato con Orejas Chinas",
           "descripcion": "Pato asado acompañado de orejas chinas (hongo de madera) y verduras.",
           "precio": 23.00
         },
         {
-          "nombre": "PatoconTamarindo",
+          "nombre": "Pato con Tamarindo",
           "descripcion": "Pato asado bañado en nuestra salsa de tamarindo agridulce.",
           "precio": 25.00
         }
@@ -333,14 +341,15 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Alitas",
+      "imagen": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
-          "nombre": "AlitasconTausi",
+          "nombre": "Alitas con Tausi",
           "descripcion": "Alitas fritas crocantes salteadas con salsa de tausi.",
           "precio": 20.00
         },
         {
-          "nombre": "AlitasconTamarindo",
+          "nombre": "Alitas con Tamarindo",
           "descripcion": "Alitas fritas bañadas en salsa de tamarindo con frutas.",
           "precio": 20.00
         },
@@ -350,7 +359,7 @@ export const MENU_DATA: MenuData = {
           "precio": 20.00
         },
         {
-          "nombre": "AlitasconOstión",
+          "nombre": "Alitas con Ostión",
           "descripcion": "Alitas salteadas en rica salsa de ostión.",
           "precio": 20.00
         },
@@ -368,6 +377,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Piqueos",
+      "imagen": "https://plus.unsplash.com/premium_photo-1661600863920-2188fb870676?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Porción de Wantan",
@@ -388,6 +398,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Guarniciones",
+      "imagen": "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Plátanos Fritos",
@@ -425,6 +436,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Bebidas Frias",
+      "imagen": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Gaseosa 1L",
@@ -457,6 +469,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Refrescos",
+      "imagen": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Limonada Frozen 1L",
@@ -478,6 +491,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Bebidas Calientes",
+      "imagen": "https://images.unsplash.com/photo-1544787219-7f47ccb76547?auto=format&fit=crop&w=600&q=80",
       "items": [
         {
           "nombre": "Te Jazmin",

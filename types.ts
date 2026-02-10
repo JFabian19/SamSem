@@ -7,6 +7,7 @@ export interface MenuItem {
 export interface MenuCategory {
   categoria: string;
   items: MenuItem[];
+  imagen?: string;
 }
 
 export interface MenuData {
