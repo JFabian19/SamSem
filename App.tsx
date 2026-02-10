@@ -59,13 +59,67 @@ const App: React.FC = () => {
         />
 
         <main className="flex-grow pt-6 pb-12">
-          {MENU_DATA.menu.map((category, index) => (
-            <MenuSection
-              key={index}
-              category={category}
-              id={`category-${index}`}
-            />
-          ))}
+
+          {/* Section 1: Sopas/Tallarines vs Arroces */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden mb-8">
+            {/* Left Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isLeft = ["Sopas", "Tallarines"].includes(category.categoria);
+                if (!isLeft) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+            {/* Right Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isRight = ["Arroces (Chaufas y Aeropuertos)"].includes(category.categoria);
+                if (!isRight) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+          </div>
+
+          {/* Section 2: Combinados/Dulces vs Salados/Chancho/Pato */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden mb-8">
+            {/* Left Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isLeft = ["Combinados", "Platos Dulces"].includes(category.categoria);
+                if (!isLeft) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+            {/* Right Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isRight = ["Platos Salados", "Chancho Asado", "Pato Asado"].includes(category.categoria);
+                if (!isRight) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+          </div>
+
+          {/* Section 3: Sides/Drinks */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden">
+            {/* Left Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isLeft = ["Alitas", "Guarniciones"].includes(category.categoria);
+                if (!isLeft) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+            {/* Right Column */}
+            <div className="flex flex-col">
+              {MENU_DATA.menu.map((category, index) => {
+                const isRight = ["Piqueos", "Bebidas Frias", "Refrescos", "Bebidas Calientes"].includes(category.categoria);
+                if (!isRight) return null;
+                return <MenuSection key={index} category={category} id={`category-${index}`} />;
+              })}
+            </div>
+          </div>
+
         </main>
 
         <Footer />

@@ -16,28 +16,73 @@ export const MENU_DATA: MenuData = {
       "items": [
         {
           "nombre": "Sopa Wantan",
-          "descripcion": "Wantan + verduras + pollo en trozos + huevo de codorniz",
+          "descripcion": "Delicada sopa con wantanes rellenos de carne jugosa, pollo en trozos tiernos, huevo de codorniz y verduras frescas.",
           "precio": 11.00
         },
         {
           "nombre": "Sopa Woming",
-          "descripcion": "Fideos chinos + pollo en trozos + verduras + huevo de codorniz",
+          "descripcion": "Sopa sustanciosa con fideos chinos artesanales, pollo, verduras selectas y huevo de codorniz en un caldo reconfortante.",
           "precio": 11.00
         },
         {
           "nombre": "Sopa Fuchifu",
-          "descripcion": "Fideos de arroz + pollo en trozos + huevo batido + col china",
+          "descripcion": "Tradicional sopa con fideos de arroz, trozos de pollo y el toque especial de huevo batido con col china fresca.",
           "precio": 11.00
         },
         {
           "nombre": "Sopa Wantan Especial",
-          "descripcion": "Wantan + langostinos + pollo en trozos + chancho + huevo de codorniz + verduras",
+          "descripcion": "La versión suprema: wantanes, langostinos frescos, pollo, chancho asado, huevo de codorniz y verduras.",
           "precio": 14.00
         },
         {
           "nombre": "Sopa Woming Especial",
-          "descripcion": "Fideos chinos + pollo en trozos + langostinos + verduras + chancho + huevo de codorniz",
+          "descripcion": "Festín de fideos chinos con langostinos, pollo, chancho asado, huevo de codorniz y verduras crujientes.",
           "precio": 12.00
+        }
+      ]
+    },
+    {
+      "categoria": "Tallarines",
+      "items": [
+        {
+          "nombre": "Tallarín SaltadoconPollo",
+          "descripcion": "Tallarines salteados al wok con trozos de pollo tierno y verduras frescas en salsa de la casa.",
+          "precio": 18.00
+        },
+        {
+          "nombre": "Tallarín SaltadoconChancho",
+          "descripcion": "Tallarines con láminas de chancho asado y verduras crocantes, salteados para un sabor ahumado único.",
+          "precio": 20.00
+        },
+        {
+          "nombre": "Tallarín SaltadoconPato",
+          "descripcion": "Delicioso pato asado salteado con tallarines y verduras en su punto.",
+          "precio": 22.00
+        },
+        {
+          "nombre": "Tallarín SaltadoconCarne",
+          "descripcion": "Trozos de carne de res salteados al fuego alto con tallarines y verduras.",
+          "precio": 20.00
+        },
+        {
+          "nombre": "Tallarín SaltadoconLangostino",
+          "descripcion": "Langostinos frescos salteados con tallarines y verduras, un clásico marinero.",
+          "precio": 25.00
+        },
+        {
+          "nombre": "40 x 40 Taipa",
+          "descripcion": "Plato contundente con tallarines, pollo, carne, chancho, langostinos y huevo de codorniz en salsa especial.",
+          "precio": 35.00
+        },
+        {
+          "nombre": "Saofan Saltado",
+          "descripcion": "Fideos de arroz (Saofan) salteados con pollo y verduras, una textura suave y deliciosa.",
+          "precio": 25.00
+        },
+        {
+          "nombre": "Tallarín Saltado Sam Sem",
+          "descripcion": "Nuestra especialidad: tallarín con pollo, carne, chancho asado, tortilla de huevo y el toque crujiente del Fan sí frito.",
+          "precio": 28.00
         }
       ]
     },
@@ -46,128 +91,83 @@ export const MENU_DATA: MenuData = {
       "items": [
         {
           "nombre": "Chaufa de Pollo",
-          "descripcion": "Arroz + pollo en trozos",
+          "descripcion": "Arroz salteado al wok con trozos de pollo, huevo y cebollita china, con el auténtico sabor ahumado.",
           "precio": 16.00
         },
         {
           "nombre": "Chaufa de Pato",
-          "descripcion": "Arroz + pato en trozos",
+          "descripcion": "Exquisito arroz chaufa con trozos de pato asado, lleno de sabor.",
           "precio": 20.00
         },
         {
           "nombre": "Chaufa de Chancho",
-          "descripcion": "Arroz + chancho en trozos",
+          "descripcion": "Arroz chaufa con nuestro característico chancho asado dulce y jugoso.",
           "precio": 22.00
         },
         {
           "nombre": "Chaufa Vegetariano",
-          "descripcion": "Arroz + verduras",
+          "descripcion": "Variedad de verduras frescas salteadas al wok con arroz, ideal para disfrutar sin carne.",
           "precio": 22.00
         },
         {
           "nombre": "Chaufa de Mariscos",
-          "descripcion": "Arroz + mariscos",
+          "descripcion": "Sabor a mar: arroz chaufa salteado con una selección de mariscos frescos.",
           "precio": 28.00
         },
         {
           "nombre": "Chaufa Sam Sem",
-          "descripcion": "Arroz + chancho + pollo + champiñones + tortilla de huevo",
+          "descripcion": "El chaufa que lo tiene todo: pollo, chancho asado, champiñones y tortilla de huevo.",
           "precio": 25.00
         },
         {
           "nombre": "Chaufa de Carne",
-          "descripcion": "Arroz + carne en trozos",
+          "descripcion": "Arroz chaufa clásico con trozos de carne de res salteada.",
           "precio": 20.00
         },
         {
           "nombre": "Chaufa Mar y Tierra",
-          "descripcion": "Arroz + mariscos + pollo + carne",
+          "descripcion": "Lo mejor de dos mundos: mariscos, pollo y carne salteados en un chaufa espectacular.",
           "precio": 25.00
         },
         {
           "nombre": "Chaufa Tropical",
-          "descripcion": "Arroz + pollo + piña + verduras + plátanos fritos",
+          "descripcion": "Toque dulce y salado: arroz chaufa con pollo, piña, verduras y plátanos fritos.",
           "precio": 20.00
         },
         {
           "nombre": "Chaufa a la Cubana",
-          "descripcion": "Arroz + pollo + plátanos + huevo frito",
+          "descripcion": "Contundente chaufa de pollo acompañado de plátanos fritos dulces y huevo frito montado.",
           "precio": 20.00
         },
         {
           "nombre": "Chaufa con Langostinos",
-          "descripcion": "Arroz + langostinos",
+          "descripcion": "Arroz chaufa salteado con langostinos jugosos y frescos.",
           "precio": 30.00
         },
         {
-          "nombre": "Aeropuerto cn Pollo",
-          "descripcion": "Arroz + verduras + tallarines f/s + pollo en trozos",
+          "nombre": "AeropuertoconPollo",
+          "descripcion": "Mezcla perfecta de arroz chaufa, tallarines fritos, verduras y pollo, todo salteado al wok.",
           "precio": 18.00
         },
         {
-          "nombre": "Aeropuerto cn Chancho",
-          "descripcion": "Arroz + verduras + tallarines f/s + chancho en trozos",
+          "nombre": "AeropuertoconChancho",
+          "descripcion": "Combinación de arroz chaufa y tallarines crocantes con nuestro chancho asado.",
           "precio": 20.00
         },
         {
-          "nombre": "Aeropuerto cn Carne",
-          "descripcion": "Arroz + verduras + tallarines f/s + carne en trozos",
+          "nombre": "AeropuertoconCarne",
+          "descripcion": "Arroz chaufa y tallarines salteados con trozos de carne y verduras.",
           "precio": 20.00
         },
         {
           "nombre": "Aeropuerto Especial",
-          "descripcion": "Arroz + verduras + tallarines f/s + pollo + carne + chancho + tortilla de huevo",
+          "descripcion": "Aeropuerto completo con pollo, carne, chancho asado y tortilla de huevo. ¡Para compartir!",
           "precio": 26.00
         },
         {
           "nombre": "Aeropuerto a la Cubana",
-          "descripcion": "Arroz + verduras + tallarines f/s + pollo en trozos + plátanos + huevo frito",
+          "descripcion": "Aeropuerto de pollo servido con plátanos fritos y huevo frito, una explosión de sabor.",
           "precio": 23.00
-        }
-      ]
-    },
-    {
-      "categoria": "Tallarines",
-      "items": [
-        {
-          "nombre": "Tallarín Saltado c/n Pollo",
-          "descripcion": "Tallarines + verduras + pollo en trozos",
-          "precio": 18.00
-        },
-        {
-          "nombre": "Tallarín Saltado c/n Chancho",
-          "descripcion": "Tallarines + verduras + chancho en trozos",
-          "precio": 20.00
-        },
-        {
-          "nombre": "Tallarín Saltado c/n Pato",
-          "descripcion": "Tallarines + verduras + pato en trozos",
-          "precio": 22.00
-        },
-        {
-          "nombre": "Tallarín Saltado cn Carne",
-          "descripcion": "Tallarines + verduras + carne en trozos",
-          "precio": 20.00
-        },
-        {
-          "nombre": "Tallarín Saltado cn Langostino",
-          "descripcion": "Tallarines + verduras + langostinos",
-          "precio": 25.00
-        },
-        {
-          "nombre": "40 x 40 Taipa",
-          "descripcion": "Tallarines + verduras + pollo + carne + chancho + huevo de codorniz + langostinos",
-          "precio": 35.00
-        },
-        {
-          "nombre": "Saofan Saltado",
-          "descripcion": "Saofan + verduras + pollo en trozos",
-          "precio": 25.00
-        },
-        {
-          "nombre": "Tallarín Saltado Sam Sem",
-          "descripcion": "Tallarín + pollo + carne + chancho + tortilla de huevo + Fan sí Frito",
-          "precio": 28.00
         }
       ]
     },
@@ -175,250 +175,220 @@ export const MENU_DATA: MenuData = {
       "categoria": "Combinados",
       "items": [
         {
-          "nombre": "Combinado cn Pollo",
-          "descripcion": "Arroz chaufa + fideos fritos o sancochado + verduras + pollo en trozos",
+          "nombre": "CombinadoconPollo",
+          "descripcion": "Dúo perfecto: Arroz chaufa y tallarín (frito o sancochado) con pollo y verduras.",
           "precio": 20.00
         },
         {
-          "nombre": "Combinado cn Chancho",
-          "descripcion": "Arroz chaufa + fideos fritos o sancochado + verduras + chancho",
+          "nombre": "CombinadoconChancho",
+          "descripcion": "Arroz chaufa con tallarín y nuestro chancho asado especial.",
           "precio": 23.00
         },
         {
-          "nombre": "Combinado cn Carne",
-          "descripcion": "Arroz chaufa + fideos fritos o sancochado + verduras + carne",
+          "nombre": "CombinadoconCarne",
+          "descripcion": "Mezcla de chaufa y tallarín con carne de res y verduras.",
           "precio": 25.00
         },
         {
-          "nombre": "Combinado cn Pato",
-          "descripcion": "Arroz chaufa + fideos fritos o sancochado + verduras + pato",
+          "nombre": "CombinadoconPato",
+          "descripcion": "Combinado servido con generosas porciones de pato asado y verduras.",
           "precio": 25.00
         },
         {
           "nombre": "Combinado Especial",
-          "descripcion": "Arroz chaufa + fideos fritos o sancochado + verduras + chancho + pollo + carne + langostinos",
+          "descripcion": "El plato que lo tiene todo: chaufa, tallarín, chancho, pollo, carne y langostinos.",
           "precio": 28.00
         }
       ]
     },
     {
-      "categoria": "Platos Salados (Pollo)",
+      "categoria": "Platos Dulces",
       "items": [
         {
-          "nombre": "Pollo cn Verduras",
-          "descripcion": "Pollo en trozos + verduras + chaufa o arroz blanco",
-          "precio": 18.00
-        },
-        {
-          "nombre": "Pollo cn Champiñones",
-          "descripcion": "Pollo en trozos + champiñones + chaufa o arroz blanco",
+          "nombre": "PolloconDurazno",
+          "descripcion": "Pollo crocante bañado en salsa de durazno dulce con verduras seleccionadas.",
           "precio": 22.00
         },
         {
-          "nombre": "Pollo en Salsa de Ostión",
-          "descripcion": "Pollo en trozos bañado en salsa de ostión + verduras + chaufa o arroz blanco",
-          "precio": 20.00
-        },
-        {
-          "nombre": "Pollo cn Tausi",
-          "descripcion": "Pollo en trozos + verduras + tausi + chaufa o arroz blanco",
-          "precio": 19.00
-        },
-        {
-          "nombre": "Pollo Enrollado en Salsa de Ostión",
-          "descripcion": "Pollo enrollado bañado en salsa de ostión + verduras + chaufa o arroz blanco",
-          "precio": 22.00
-        }
-      ]
-    },
-    {
-      "categoria": "Platos Dulces (Pollo y Chancho)",
-      "items": [
-        {
-          "nombre": "Chancho cn Tamarindo",
-          "descripcion": "Chancho asado en salsa de tamarindo + verduras + chaufa o arroz blanco",
-          "precio": 22.00
-        },
-        {
-          "nombre": "Pollo cn Durazno",
-          "descripcion": "Pollo empanizado en trozos + durazno + verduras + chaufa",
-          "precio": 22.00
-        },
-        {
-          "nombre": "Pollo cn Piña",
-          "descripcion": "Pollo + piña en trozos + chaufa",
+          "nombre": "PolloconPiña",
+          "descripcion": "Clásico agridulce: pollo con trozos de piña en salsa especial.",
           "precio": 21.00
         },
         {
           "nombre": "Pollo Tipakay",
-          "descripcion": "Chicharrón de pollo + wantan en trozos + piña + durazno + chaufa",
+          "descripcion": "Pechuga de pollo crocante en salsa dulce (agridulce de tomate) con wantan y frutas.",
           "precio": 21.00
         },
         {
-          "nombre": "Pollo cn Tamarindo",
-          "descripcion": "Pollo en salsa de tamarindo + verduras + chaufa",
+          "nombre": "PolloconTamarindo",
+          "descripcion": "Pollo y verduras bañados en nuestra clásica salsa de tamarindo agridulce.",
           "precio": 21.00
         },
         {
           "nombre": "Kamlu Wantan",
-          "descripcion": "Wantan + pollo + chancho + carne + huevo de codorniz + chaufa",
+          "descripcion": "Plato festivo: wantanes crocantes cubiertos con pollo, chancho, carne, langostinos y verduras en salsa dulce.",
           "precio": 25.00
         },
         {
-          "nombre": "Pollo Enrollado cn Tamarindo",
-          "descripcion": "Pollo enrollado + verduras + chaufa",
+          "nombre": "Pollo EnrolladoconTamarindo",
+          "descripcion": "Pollo enrollado especial servido con verduras y salsa de tamarindo.",
           "precio": 25.00
         },
         {
-          "nombre": "Pollo cn Piña y Durazno",
-          "descripcion": "Pollo + piña + durazno + chaufa",
+          "nombre": "PolloconPiña y Durazno",
+          "descripcion": "Dulce combinación de pollo con piña y durazno, una delicia frutal.",
           "precio": 23.00
         },
         {
           "nombre": "Pollo Limonkay",
-          "descripcion": "Pollo empanizado en trozos en salsa de limón oriental + verduras + chaufa",
+          "descripcion": "Crujiente pollo empanizado bañado en brillante salsa de limón oriental, servido con verduras.",
           "precio": 23.00
         }
       ]
     },
     {
-      "categoria": "Platos de Chancho y Pato",
+      "categoria": "Platos Salados",
       "items": [
         {
-          "nombre": "Chancho cn Verduras",
-          "descripcion": "Chancho asado + verduras + chaufa o arroz blanco",
-          "precio": 19.00
+          "nombre": "PolloconVerduras",
+          "descripcion": "Saludable y delicioso: pollo salteado con verduras frescas variadas.",
+          "precio": 18.00
         },
         {
-          "nombre": "Chancho cn Nabo",
-          "descripcion": "Chancho asado + nabo + verduras + chaufa o arroz blanco",
+          "nombre": "PolloconChampiñones",
+          "descripcion": "Pollo tierno salteado con champiñones frescos y verduras.",
+          "precio": 22.00
+        },
+        {
+          "nombre": "Pollo en Salsa de Ostión",
+          "descripcion": "Trozos de pollo marinados y bañados en salsa de ostión con verduras.",
           "precio": 20.00
         },
         {
-          "nombre": "Chancho cn Tausí",
-          "descripcion": "Chancho asado + verduras + tausi + chaufa o arroz blanco",
+          "nombre": "PolloconTausi",
+          "descripcion": "Pollo salteado con salsa de tausi (frijol negro fermentado) para un sabor intenso.",
+          "precio": 19.00
+        },
+        {
+          "nombre": "Pollo Enrollado en Salsa de Ostión",
+          "descripcion": "Elegante pollo enrollado cubierto con salsa de ostión y verduras.",
+          "precio": 22.00
+        }
+      ]
+    },
+    {
+      "categoria": "Chancho Asado",
+      "items": [
+        {
+          "nombre": "ChanchoconTamarindo",
+          "descripcion": "Chancho asado bañado en salsa agridulce de tamarindo con verduras.",
+          "precio": 22.00
+        },
+        {
+          "nombre": "ChanchoconVerduras",
+          "descripcion": "Chancho asado salteado con mix de verduras frescas.",
+          "precio": 19.00
+        },
+        {
+          "nombre": "ChanchoconNabo",
+          "descripcion": "Tradicional combinación de chancho asado con nabo encurtido y verduras.",
+          "precio": 20.00
+        },
+        {
+          "nombre": "ChanchoconTausí",
+          "descripcion": "Chancho asado salteado en salsa de tausi, sabor oriental clásico.",
           "precio": 20.00
         },
         {
           "nombre": "Chancho Cruyok",
-          "descripcion": "Chancho asado + verduras + chaufa o arroz blanco",
+          "descripcion": "Chancho asado crocante con salsa y verduras.",
           "precio": 20.00
-        },
+        }
+      ]
+    },
+    {
+      "categoria": "Pato Asado",
+      "items": [
         {
-          "nombre": "Pato cn Verduras",
-          "descripcion": "Pato asado + verduras + chaufa o arroz blanco",
+          "nombre": "PatoconVerduras",
+          "descripcion": "Pato asado jugoso salteado con verduras frescas.",
           "precio": 22.00
         },
         {
-          "nombre": "Pato cn Champiñones",
-          "descripcion": "Pato asado + verduras + champiñones + chaufa o arroz blanco",
+          "nombre": "PatoconChampiñones",
+          "descripcion": "Lujosa combinación de pato asado y champiñones.",
           "precio": 25.00
         },
         {
-          "nombre": "Pato cn Orejas Chinas",
-          "descripcion": "Pato asado + orejas chinas + verduras + chaufa o arroz blanco",
+          "nombre": "PatoconOrejas Chinas",
+          "descripcion": "Pato asado acompañado de orejas chinas (hongo de madera) y verduras.",
           "precio": 23.00
         },
         {
-          "nombre": "Pato cn Tamarindo",
-          "descripcion": "Pato asado en salsa de tamarindo + verduras + chaufa o arroz blanco",
+          "nombre": "PatoconTamarindo",
+          "descripcion": "Pato asado bañado en nuestra salsa de tamarindo agridulce.",
           "precio": 25.00
         }
       ]
     },
     {
-      "categoria": "Alitas y Piqueos",
+      "categoria": "Alitas",
       "items": [
         {
-          "nombre": "Alitas cn Tausi",
-          "descripcion": "8 Pz alitas fritas + tausi + verduras + chaufa",
+          "nombre": "AlitasconTausi",
+          "descripcion": "Alitas fritas crocantes salteadas con salsa de tausi.",
           "precio": 20.00
         },
         {
-          "nombre": "Alitas cn Tamarindo",
-          "descripcion": "8 Pz alitas fritas en salsa de tamarindo + piña + durazno + verduras + chaufa",
+          "nombre": "AlitasconTamarindo",
+          "descripcion": "Alitas fritas bañadas en salsa de tamarindo con frutas.",
           "precio": 20.00
         },
         {
           "nombre": "Alitas Limonkay",
-          "descripcion": "8 Pz alitas fritas en salsa de limón oriental + verduras + chaufa",
+          "descripcion": "Alitas fritas glaseadas con salsa de limón oriental.",
           "precio": 20.00
         },
         {
-          "nombre": "Alitas cn Ostión",
-          "descripcion": "8 Pz alitas fritas en salsa de ostión + verduras + chaufa",
+          "nombre": "AlitasconOstión",
+          "descripcion": "Alitas salteadas en rica salsa de ostión.",
           "precio": 20.00
         },
         {
           "nombre": "Alitas Teriyaki",
-          "descripcion": "8 Pz alitas fritas en salsa Teriyaki + chaufa",
+          "descripcion": "Alitas con el toque dulce y salado de la salsa Teriyaki.",
           "precio": 20.00
         },
         {
           "nombre": "Alitas BBQ",
-          "descripcion": "8 Pz alitas fritas en salsa BBQ + chaufa",
+          "descripcion": "Alitas bañadas en salsa BBQ clásica y deliciosa.",
           "precio": 20.00
-        },
+        }
+      ]
+    },
+    {
+      "categoria": "Piqueos",
+      "items": [
         {
           "nombre": "Porción de Wantan",
-          "descripcion": "12 wantanes con relleno + salsa de tamarindo",
+          "descripcion": "12 wantanes fritos, doraditos y crujientes con salsa de tamarindo.",
           "precio": 15.00
         },
         {
-          "nombre": "1/2 Porción de Wantan",
-          "descripcion": "6 wantanes con relleno + salsa de tamarindo",
+          "nombre": "½ Porción de Wantan",
+          "descripcion": "6 unidades de nuestros wantanes clásicos.",
           "precio": 8.00
         },
         {
           "nombre": "Porción de Tequeños",
-          "descripcion": "8 tequeños rellenos de jamón y queso + salsa de guacamole",
+          "descripcion": "8 tequeños rellenos de jamón y queso, acompañados de salsa guacamole.",
           "precio": 22.00
         }
       ]
     },
     {
-      "categoria": "Bebidas y Guarniciones",
+      "categoria": "Guarniciones",
       "items": [
-        {
-          "nombre": "Gaseosa 1L",
-          "precio": 8.00
-        },
-        {
-          "nombre": "Gaseosa Gordita",
-          "precio": 5.00
-        },
-        {
-          "nombre": "Gaseosa 1/2 L",
-          "precio": 4.00
-        },
-        {
-          "nombre": "Gaseosa Personal",
-          "precio": 3.00
-        },
-        {
-          "nombre": "Gaseosa 1.5 L",
-          "precio": 12.00
-        },
-        {
-          "nombre": "Agua Mineral",
-          "precio": 3.00
-        },
-        {
-          "nombre": "Limonada Frozen 1L",
-          "precio": 18.00
-        },
-        {
-          "nombre": "Maracuyá 1L",
-          "precio": 20.00
-        },
-        {
-          "nombre": "Limonada Pink 1L",
-          "precio": 20.00
-        },
-        {
-          "nombre": "Chicha Morada 1L",
-          "precio": 20.00
-        },
         {
           "nombre": "Plátanos Fritos",
           "precio": 3.00
@@ -450,6 +420,80 @@ export const MENU_DATA: MenuData = {
         {
           "nombre": "Encurtido de Nabo",
           "precio": 8.00
+        }
+      ]
+    },
+    {
+      "categoria": "Bebidas Frias",
+      "items": [
+        {
+          "nombre": "Gaseosa 1L",
+          "descripcion": "Coca Cola / Inca Kola",
+          "precio": 8.00
+        },
+        {
+          "nombre": "Gaseosa Gordita",
+          "precio": 5.00
+        },
+        {
+          "nombre": "Gaseosa ½ L",
+          "descripcion": "Coca Cola / Inca Kola",
+          "precio": 4.00
+        },
+        {
+          "nombre": "Gaseosa Personal",
+          "descripcion": "Coca Cola / Inca Kola",
+          "precio": 3.00
+        },
+        {
+          "nombre": "Gaseosa 1.5 L",
+          "precio": 12.00
+        },
+        {
+          "nombre": "Agua Mineral",
+          "precio": 3.00
+        }
+      ]
+    },
+    {
+      "categoria": "Refrescos",
+      "items": [
+        {
+          "nombre": "Limonada Frozen 1L",
+          "precio": 18.00
+        },
+        {
+          "nombre": "Maracuyá 1L",
+          "precio": 20.00
+        },
+        {
+          "nombre": "Limonada Pink 1L",
+          "precio": 20.00
+        },
+        {
+          "nombre": "Chicha Morada 1L",
+          "precio": 20.00
+        }
+      ]
+    },
+    {
+      "categoria": "Bebidas Calientes",
+      "items": [
+        {
+          "nombre": "Te Jazmin",
+          "precio": 5.00
+        },
+        {
+          "nombre": "Te Verde",
+          "precio": 5.00
+        },
+        {
+          "nombre": "Anis / Manzanilla / Te",
+          "precio": 3.00
+        },
+        {
+          "nombre": "Cafe",
+          "precio": 4.00
         }
       ]
     }
