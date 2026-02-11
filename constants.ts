@@ -13,7 +13,7 @@ export const MENU_DATA: MenuData = {
   "menu": [
     {
       "categoria": "Sopas",
-      "imagen": "https://images.unsplash.com/photo-1547592166-23acbe3a624b?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/Sopa.png",
       "items": [
         {
           "nombre": "Sopa Wantan",
@@ -44,7 +44,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Tallarines",
-      "imagen": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/tallarines.png",
       "items": [
         {
           "nombre": "Tallarín Saltado con Pollo",
@@ -90,7 +90,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Arroces (Chaufas y Aeropuertos)",
-      "imagen": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/aeropuerto.png",
       "items": [
         {
           "nombre": "Chaufa de Pollo",
@@ -176,7 +176,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Combinados",
-      "imagen": "https://images.unsplash.com/photo-1541696432-82c6da8ce6d2?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/combinado.png",
       "items": [
         {
           "nombre": "Combinado con Pollo",
@@ -207,7 +207,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Platos Dulces",
-      "imagen": "https://images.unsplash.com/photo-1525203106342-526347d45cb5?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/tipakay.png",
       "items": [
         {
           "nombre": "Pollo con Durazno",
@@ -253,7 +253,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Platos Salados",
-      "imagen": "https://images.unsplash.com/photo-1623341214183-167825227d82?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/salados.png",
       "items": [
         {
           "nombre": "Pollo con Verduras",
@@ -284,7 +284,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Chancho Asado",
-      "imagen": "https://images.unsplash.com/photo-1624726175512-19c974541b6d?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/chancho.png",
       "items": [
         {
           "nombre": "Chancho con Tamarindo",
@@ -315,7 +315,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Pato Asado",
-      "imagen": "https://images.unsplash.com/photo-1516448332152-78d122e20ff3?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/pato.png",
       "items": [
         {
           "nombre": "Pato con Verduras",
@@ -341,7 +341,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Alitas",
-      "imagen": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/alitas.png",
       "items": [
         {
           "nombre": "Alitas con Tausi",
@@ -377,7 +377,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Piqueos",
-      "imagen": "https://plus.unsplash.com/premium_photo-1661600863920-2188fb870676?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/piqueos.png",
       "items": [
         {
           "nombre": "Porción de Wantan",
@@ -398,7 +398,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Guarniciones",
-      "imagen": "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/guarniciones.png",
       "items": [
         {
           "nombre": "Plátanos Fritos",
@@ -436,7 +436,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Bebidas Frias",
-      "imagen": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/bebidas_frias.png",
       "items": [
         {
           "nombre": "Gaseosa 1L",
@@ -469,7 +469,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Refrescos",
-      "imagen": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/REFRESCOS.png",
       "items": [
         {
           "nombre": "Limonada Frozen 1L",
@@ -491,7 +491,7 @@ export const MENU_DATA: MenuData = {
     },
     {
       "categoria": "Bebidas Calientes",
-      "imagen": "https://images.unsplash.com/photo-1544787219-7f47ccb76547?auto=format&fit=crop&w=600&q=80",
+      "imagen": "/bebidas_calientes.png",
       "items": [
         {
           "nombre": "Te Jazmin",

@@ -7,6 +7,19 @@ import { MENU_DATA, COLORS } from './constants';
 
 const App: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('category-0');
+  const [menuData, setMenuData] = useState(MENU_DATA);
+
+  useEffect(() => {
+    const loadData = async () => {
+      // Dynamic import to avoid issues if service is incomplete, but here it's fine
+      const { fetchMenuData } = await import('./services/googleSheets');
+      const data = await fetchMenuData();
+      if (data) {
+        setMenuData(data);
+      }
+    };
+    loadData();
+  }, []);
 
   const scrollToCategory = (id: string) => {
     setActiveCategory(id);
@@ -53,7 +66,7 @@ const App: React.FC = () => {
         <Hero />
 
         <Navigation
-          categories={MENU_DATA.menu}
+          categories={menuData.menu}
           activeCategory={activeCategory}
           onSelectCategory={scrollToCategory}
         />
@@ -64,7 +77,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden mb-8">
             {/* Left Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isLeft = ["Sopas", "Tallarines"].includes(category.categoria);
                 if (!isLeft) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;
@@ -72,7 +85,7 @@ const App: React.FC = () => {
             </div>
             {/* Right Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isRight = ["Arroces (Chaufas y Aeropuertos)"].includes(category.categoria);
                 if (!isRight) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;
@@ -84,7 +97,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden mb-8">
             {/* Left Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isLeft = ["Combinados", "Platos Dulces"].includes(category.categoria);
                 if (!isLeft) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;
@@ -92,7 +105,7 @@ const App: React.FC = () => {
             </div>
             {/* Right Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isRight = ["Platos Salados", "Chancho Asado", "Pato Asado"].includes(category.categoria);
                 if (!isRight) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;
@@ -104,7 +117,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start max-w-full overflow-hidden">
             {/* Left Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isLeft = ["Alitas", "Guarniciones"].includes(category.categoria);
                 if (!isLeft) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;
@@ -112,7 +125,7 @@ const App: React.FC = () => {
             </div>
             {/* Right Column */}
             <div className="flex flex-col">
-              {MENU_DATA.menu.map((category, index) => {
+              {menuData.menu.map((category, index) => {
                 const isRight = ["Piqueos", "Bebidas Frias", "Refrescos", "Bebidas Calientes"].includes(category.categoria);
                 if (!isRight) return null;
                 return <MenuSection key={index} category={category} id={`category-${index}`} />;

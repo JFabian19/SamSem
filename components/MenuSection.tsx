@@ -19,14 +19,17 @@ const MenuSection: React.FC<Props> = ({ category, id }) => {
         <div className="flex-grow h-px bg-yellow-500 opacity-50"></div>
       </div>
 
-      <div className="relative bg-black bg-opacity-40 rounded-lg p-4 shadow-inner overflow-hidden">
+      <div className="relative bg-black bg-opacity-40 rounded-lg shadow-inner overflow-hidden">
         {category.imagen && (
-          <div
-            className="absolute inset-0 z-0 opacity-30 bg-cover bg-center pointer-events-none transition-transform duration-700 hover:scale-110"
-            style={{ backgroundImage: `url(${category.imagen})` }}
-          />
+          <div className="w-full h-32 md:h-40">
+            <img
+              src={category.imagen}
+              alt={category.categoria}
+              className="w-full h-full object-cover"
+            />
+          </div>
         )}
-        <div className="relative z-10">
+        <div className="relative z-10 p-4">
           {category.items.map((item, index) => (
             <MenuItem key={`${category.categoria}-${index}`} item={item} />
           ))}
