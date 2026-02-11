@@ -1,10 +1,10 @@
+/// <reference types="vite/client" />
 import Papa from 'papaparse';
 import { MenuData, MenuCategory, MenuItem } from '../types';
 import { GoogleSheetCategory, GoogleSheetItem } from './types';
 
-// These IDs should be in environment variables ideally, but for now we can put them here or load them.
-// The user needs to publish the sheet and get the ID.
-const SPREADSHEET_ID = import.meta.env.VITE_GOOGLE_SHEET_ID;
+// These IDs should be in environment variables. We include a fallback for safety.
+const SPREADSHEET_ID = import.meta.env.VITE_GOOGLE_SHEET_ID || '1FILiVgCY52_9F69J7_UxRFD-Rf3wp-wbN2krIf2-57g';
 const CATEGORIES_GID = import.meta.env.VITE_CATEGORIES_GID || '0'; // Default first sheet usually 0
 const ITEMS_GID = import.meta.env.VITE_ITEMS_GID;
 
@@ -32,23 +32,32 @@ export const fetchMenuData = async (): Promise<MenuData | null> => {
     }
 
     try {
+        console.log('Starting menu fetch...');
         // 1. Fetch Categories first
         const categoriesData = await fetchSheetData<GoogleSheetCategory>(SPREADSHEET_ID, CATEGORIES_GID);
+        console.log('Categories fetched:', categoriesData);
 
         // 2. Check if we have GIDs in the categories specific sheets
         // We look for a 'gid' property in the rows.
         const hasPerCategorySheets = categoriesData.some(cat => cat.gid && cat.gid.trim() !== '');
+        console.log('Multi-tab mode detected:', hasPerCategorySheets);
 
         if (hasPerCategorySheets) {
             // Fetch each category's sheet
             const categoriesWithItems = await Promise.all(categoriesData.map(async (cat) => {
                 let items: GoogleSheetItem[] = [];
-                if (cat.gid) {
+                const gid = cat.gid ? cat.gid.trim() : '';
+
+                if (gid) {
                     try {
-                        items = await fetchSheetData<GoogleSheetItem>(SPREADSHEET_ID, cat.gid);
+                        console.log(`Fetching items for category: ${cat.nombre} (GID: ${gid})`);
+                        items = await fetchSheetData<GoogleSheetItem>(SPREADSHEET_ID, gid);
+                        console.log(`Success: ${items.length} items found for ${cat.nombre}`);
                     } catch (e) {
-                        console.error(`Failed to fetch items for category ${cat.nombre} (GID: ${cat.gid})`, e);
+                        console.error(`Failed to fetch items for category ${cat.nombre} (GID: ${gid})`, e);
                     }
+                } else {
+                    console.warn(`Category ${cat.nombre} has no GID assigned.`);
                 }
                 return { ...cat, items };
             }));
@@ -72,7 +81,12 @@ export const fetchMenuData = async (): Promise<MenuData | null> => {
 };
 
 const fetchSheetData = <T>(spreadsheetId: string, gid: string): Promise<T[]> => {
-    const url = `https://docs.google.com/spreadsheets/d/e/${spreadsheetId}/pub?gid=${gid}&single=true&output=csv&t=${new Date().getTime()}`;
+    // Support both "published to web" IDs (2PACX-) and standard IDs
+    const isPublishedId = spreadsheetId.startsWith('2PACX-');
+    const baseUrlFragment = isPublishedId ? `d/e/${spreadsheetId}` : `d/${spreadsheetId}`;
+    const url = `https://docs.google.com/spreadsheets/${baseUrlFragment}/pub?gid=${gid}&single=true&output=csv&t=${new Date().getTime()}`;
+
+    // console.log(`Fetching URL: ${url}`); // Optional debugging 
 
     return new Promise((resolve, reject) => {
         Papa.parse(url, {
