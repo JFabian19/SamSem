@@ -1,7 +1,7 @@
 export interface GoogleSheetCategory {
     nombre: string;
-    imagen: string;
     orden: string; // CSV numbers come as strings unless parsed
+    gid?: string; // Optional: Google Sheet GID for the category tab
 }
 
 export interface GoogleSheetItem {
