@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import MenuSection from './components/MenuSection';
 import Footer from './components/Footer';
+import ShareButton from './components/ShareButton';
 import { MENU_DATA, COLORS } from './constants';
 
 const App: React.FC = () => {
@@ -148,7 +149,7 @@ const App: React.FC = () => {
         </main>
 
         <Footer />
-
+        <ShareButton />
       </div>
     </div>
   );

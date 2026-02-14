@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/elmamarestaurantechifa"
+              href="https://www.facebook.com/share/1DLAYEgm9W/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#1877F2] text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all transform hover:scale-105 shadow-lg border-2 border-blue-500/50"
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
 
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/samsem.rest/"
+              href="https://www.instagram.com/samsem.rest?igsh=amxoMXZrZnZwYWlm"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#E1306C] text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-all transform hover:scale-105 shadow-lg border-2 border-pink-500/50"
