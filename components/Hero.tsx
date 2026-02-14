@@ -85,6 +85,18 @@ const Hero: React.FC = () => {
               href="https://www.instagram.com/samsem.rest?igsh=amxoMXZrZnZwYWlm"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => {
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                if (isMobile) {
+                  e.preventDefault();
+                  // Intenta abrir la app directamente usando el esquema URI
+                  window.location.href = "instagram://user?username=samsem.rest";
+                  // Fallback a la web después de un breve retraso si la app no está instalada
+                  setTimeout(() => {
+                    window.location.href = "https://www.instagram.com/samsem.rest?igsh=amxoMXZrZnZwYWlm";
+                  }, 500);
+                }
+              }}
               className="flex items-center justify-center gap-2 bg-[#E1306C] text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-all transform hover:scale-105 shadow-lg border-2 border-pink-500/50"
             >
               <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
